@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service SimpleService {
+    rpc PerformComputation (ComputationRequest) returns (ComputationResult) {}
+}
+
+message ComputationRequest {
+    int32 x = 1;
+    int32 y = 2;
+}
+
+message ComputationResult {
+    int32 result = 1;
+}
