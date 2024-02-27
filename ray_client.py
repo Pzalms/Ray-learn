@@ -20,7 +20,7 @@ def main():
     ray.init()
 
     # Perform computation remotely
-    result_id = remote_compute.remote(12, 4)
+    result_id = remote_compute.remote(129, 45)
     result = ray.get(result_id)
     print("Result of computation:", result)
 
